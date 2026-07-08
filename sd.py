@@ -1616,7 +1616,7 @@ def crawl_company_website_deep(website_url: str, job_title: str) -> dict:
                     r"khartoum|omdurman|port sudan|kassala|el obeid|nyala|"
                     r"el fasher|wad medani|atbara|kosti|"
                     r"khartoum north|bahri|omdurman city|"
-                    r"sudan|republic of sudan|khartoum state"
+                    r"sudan|republic of sudan|khartoum state",
                     full_text, re.I)
                 if addr_m:
                     result["address"] = addr_m.group(0).strip()[:250]
